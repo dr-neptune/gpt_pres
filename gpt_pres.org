@@ -1,0 +1,107 @@
+core themes
+- gpt allows us to have a conversation with data in an iterative fashion
+  - it remembers the context of your conversation
+  - gpt is great for giving you a first pass for what you're working
+    on
+  - https://chat.openai.com/c/8e6448cb-d626-48af-97dc-2216c042e75f
+
+    - for showing context: I didn't specify smart goals, but it was
+      able to infer that is what I was talking about from #1
+
+    - Developing an Action Plan
+      (Tree of Thoughts prompting)
+
+      Suppose that this project got accepted, and imagine four different project management experts are answering this question.
+      All experts will write down 1 step of their thinking, then share it with the group.
+      Then all experts will go on to the next step, etc.
+      If any expert realises they're wrong at any point then they leave.
+      The question the experts are trying to solve is:
+      What is the optimal action plan for rolling out this risk management
+      suite of tools?
+
+  - gpt can make a great tutor
+    - https://chat.openai.com/c/3c2fa247-1275-4db7-b2f7-25199354c601
+    - show Mr. Ranedeer
+    - https://github.com/JushBJJ/Mr.-Ranedeer-AI-Tutor
+      - add prompt
+	- type /config
+	- /config Postdoc Intuitive Textbook Informative Analogical Yes English
+	- show config for AI tutor notebook
+
+- gpt is great at the stackoverflow use case
+  - it can iteratively work to understand your use case specifically
+  - you can use it to generate example data quickly and test your hypotheses
+  - https://chat.openai.com/c/b7170d5c-478a-44d7-861f-72c1a23bc3b5
+  - https://github.com/dr-neptune/risk_management/blob/master/images/brinson_output_snippet.png
+
+
+- gpt has come out with a lot of plugins as of recently
+  - show a few relevant plugins
+  - https://chat.openai.com/share/6277d396-aac4-4ab9-878c-3971daf4c07f
+
+Hi GPT4!
+
+I am interested in learning more about the company Sweetgreen from a
+fundamentals-based investor point of view. Can you pull Sweetgreen news
+from the past week and provide me an overall summary, a sentiment
+classification, and whether you think it is worth buying or selling
+stock?
+
+- with the API
+  GPT can escape the chat interface and be enabled in larger
+  programmatic environments. An interesting way to leverage it's
+  ability to reason and self-reflect is to have it act as an agent
+  attemption to complete a goal
+  - autogpt
+    Show examples of agents:
+    - Agent GPT
+      - https://github.com/reworkd/AgentGPT
+    - GPT Engineer
+      - https://github.com/AntonOsika/gpt-engineer
+
+- prompt engineering
+  - langchain allows us to chain together prompts and create custom
+    "environments" of information within our session
+    - https://python.langchain.com/docs/get_started/quickstart
+    - examples include things like making templates, storing
+      information in (vector) databases, allowing the models to choose
+      from a variety of tools to use to complete a given task (think things like APIs, calculators,
+      programs, etc), allowing models to choose different possible
+      paths forward for a given problem
+
+  - these models are also very good at the things that traditional
+    deep learning models are good at:
+    - zero shot answers, few shot answering, text classification,
+      sentiment analysis, summarization
+
+  - fine tuning models is a possibility for the open source models
+    that are available.
+    - Something like GPT is trained on large corpuses of relatively
+      public, high quality text from places like wikipedia,
+      stackoverflow, and arxiv
+    - we can use a custom corpus on other data sources to create a
+      subject matter expert. A good example is the experiments that
+      bloomberg is carrying out with [[https://www.bloomberg.com/company/press/bloomberggpt-50-billion-parameter-llm-tuned-finance/][bloombergGPT]]
+    - https://github.com/dwhitena/odsc-modern-nlp/blob/main/odsc_modern_nlp_fine-tuning.ipynb
+
+- function calling
+
+Function calling is a recently enabled feature
+
+show weather example:
+https://openai.com/blog/function-calling-and-other-api-updates
+
+This will allow us to more tightly integrate these LLMs into our
+software.
+
+
+strategize like a pro
+easier code documentation
+personal tutoring
+smarter planning
+get started
+
+extras
+plugins
+autogpt
+modern NLP
